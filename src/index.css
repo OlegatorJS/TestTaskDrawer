@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./assets/styles/fonts.css";
+/*---break---*/
+@custom-variant dark (&:is(.dark *));
+
+/*---break---*/
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-input: var(--input);
+  --color-sidebar-primary: var(--sidebar-primary);
+}
+/*---break---*/
+:root {
+  --radius: 0.625rem;
+  --input: oklch(0.922 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+}
+
+@theme {
+  --font-sans: 'Italian Plate', system-ui, -apple-system, sans-serif;
+}
